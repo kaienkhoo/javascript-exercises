@@ -1,12 +1,12 @@
 const sumAll = function(start,end) {
-      if (!Number.isInteger(start) || !Number.isInteger(end)) return "ERROR";
+    if (!Number.isInteger(start) || !Number.isInteger(end)) return "ERROR";
     if (start < 0 || end < 0) return "ERROR";
     if (start > end) {
         const temp = start;
         start = end;
         end = temp;
     }
-    
+
     let arr = []
     for(let i = start; i<=end; i++) {
         arr.push(i)
