@@ -1,4 +1,11 @@
-const findTheOldest = function() {
+const findTheOldest = function(arr) {
+    return arr.map((person) => {
+        let personAge = person.yearOfDeath - person.yearOfBirth 
+        if(personAge > age) {
+            age = personAge
+            name = person.name
+        }
+    })
 
 };
 
